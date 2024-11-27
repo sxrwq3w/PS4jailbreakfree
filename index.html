@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الألعاب - PS4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إضافة ألعاب PS4</h1>
+        <form id="game-form" class="admin-form">
+            <label for="game-name">اسم اللعبة:</label>
+            <input type="text" id="game-name" required>
+
+            <label for="game-features">مميزات اللعبة:</label>
+            <textarea id="game-features" required></textarea>
+
+            <label for="game-link">رابط اللعبة:</label>
+            <input type="text" id="game-link" required>
+
+            <label for="update-link">رابط التحديث:</label>
+            <input type="text" id="update-link">
+
+            <label for="dlc-link">رابط الإضافات:</label>
+            <input type="text" id="dlc-link">
+
+            <label for="image-upload">اختر صورة اللعبة:</label>
+            <input type="file" id="image-upload" accept="image/*">
+
+            <button type="submit">إضافة لعبة</button>
+        </form>
+        
+        <input type="text" id="search" placeholder="بحث عن اللعبة..." onkeyup="searchGames()">
+
+        <div id="games-list" class="games-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
